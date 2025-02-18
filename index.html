@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Memoria Mejorado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+    
+
+    <div class="bg"></div>
+
+    <div id="tablero" class="grid grid-cols-5 gap-4 p-6 bg-white/80 rounded-lg shadow-lg"></div>
+
+    <div id="modal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center w-96 transform transition-all scale-95 hover:scale-100">
+            <img id="imagenModal" class="w-full h-80 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out" />
+            <h2 id="tituloModal" class="text-xl font-bold text-gray-800 mb-2"></h2>
+            <p id="descripcionModal" class="text-gray-700 mb-4"></p>
+            <button onclick="cerrarModal()" class="mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition duration-300 ease-in-out">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

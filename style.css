@@ -1,0 +1,45 @@
+.tarjeta {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  width: 100px;
+  height: 120px;
+}
+.volteada {
+  transform: rotateY(180deg);
+}
+.frente, .dorso {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.frente {
+  transform: rotateY(180deg);
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dorso {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://delphigamedev.com/wp-content/uploads/2021/11/112-1123292_live-casino.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px); 
+  z-index: -1; 
+}
