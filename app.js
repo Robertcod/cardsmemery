@@ -2,9 +2,9 @@
 const imagenes = [
   {
       
-src: "/logos/facebook.png",
-titulo: "Facebook",
-descripcion: "Social platform for sharing content and connecting with people",
+src: "/logos/ChatGPT-Logo.svg.png",
+titulo: "ChatGPT",
+descripcion: "Artificial intelligence automatically and personally answers",
 },
 {
 src: "/logos/html.png",
